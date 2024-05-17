@@ -13,7 +13,6 @@ body {
   text-shadow: #000 0 0 10px;
 }
 .change {
-  z-index: 99999;
   cursor: pointer;
   border: 2px solid #9f9f9f;
   border-radius: 6px;
