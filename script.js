@@ -37,15 +37,17 @@ function openFile(filePath) {
   // Use window.location.href to redirect to the specified page
   window.location.href = filePath;
 }
-switch(window.location.protocol) {
-    const downloadLink = document.getElementById(downloadLink);
+function hideOnFile (id) {
+  switch(window.location.protocol) {
+    const element = document.getElementById(id);
     case 'http:':
     case 'https:':
-      downloadLink.style.display = "block";
+      element.style.display = "block";
       break;
     case 'file:':
-      downloadLink.style.display = "none";
+      element.style.display = "none";
       break;
     default: 
-    downloadLink.style.display = "block";
+    element.style.display = "block";
+}
 }
