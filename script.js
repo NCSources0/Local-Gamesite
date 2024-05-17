@@ -37,17 +37,3 @@ function openFile(filePath) {
   // Use window.location.href to redirect to the specified page
   window.location.href = filePath;
 }
-function hideOnFile (id) {
-  switch(window.location.protocol) {
-    const element = document.getElementById(id);
-    case 'http:':
-    case 'https:':
-      element.style.display = "block";
-      break;
-    case 'file:':
-      element.style.display = "none";
-      break;
-    default: 
-    element.style.display = "block";
-}
-}
