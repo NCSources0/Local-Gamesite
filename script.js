@@ -37,10 +37,3 @@ function openFile(filePath) {
   // Use window.location.href to redirect to the specified page
   window.location.href = filePath;
 }
-function hideOnProtocol (protocol, id) {
-  const currentProtocol = window.location.protocol;
-  const element = document.getElementById(id);
-  if (currentProtocol == protocol) {
-    element.style.display = "none";
-  }
-}
