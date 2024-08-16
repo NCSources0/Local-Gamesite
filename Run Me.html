@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
+    <title>The Lobby</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <version>Beta</version>
+      <center>
+        <handwriting style="font-size: 1.7vw">The Lobby</handwriting>
+      </center>
+    </header>
+    <div id="grid-container">
+      <div
+        style="
+          background-image: url(games/cookie-clicker/img/perfectCookie.png);
+        "
+        onclick="openGame('cookie-clicker/index.html')"
+        id="grid-item"
+      >
+        Cookie Clicker
+      </div>
+      <div
+        style="
+          background-image: url(games/hextris/images/icons/transparent.svg);
+        "
+        onclick="openGame('hextris/index.html')"
+        id="grid-item"
+      >
+        Hextris
+      </div>
+      <div
+        style="background-image: url(img/eaglercraft.png)"
+        onclick="openGame('EaglercraftX.html')"
+        id="grid-item"
+      >
+        EaglercraftX 1.8
+      </div>
+      <div
+        style="background-image: url(img/tetris.png)"
+        onclick="openGame('tetris.html')"
+        id="grid-item"
+      >
+        Tetris
+      </div>
+      <div
+        style="background-image: url(games/xx142-b2exe/splash.png)"
+        onclick="openGame('xx142-b2exe/index.html')"
+        id="grid-item"
+      >
+        xx142-b2.exe
+      </div>
+      <div
+        style="background-image: url(img/snake.png)"
+        onclick="openGame('snake/index.html')"
+        id="grid-item"
+      >
+        Snake
+      </div>
+      <div
+        style="background-image: url(games/its-adoorable/favicon.svg)"
+        onclick="openGame('its-adoorable/entercode.html')"
+        id="grid-item"
+      >
+        it's a(door)able
+      </div>
+      <div
+        style="background-image: url(img/wordle.webp)"
+        onclick="openGame('wordle/index.html')"
+        id="grid-item"
+      >
+        Wordle
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

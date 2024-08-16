@@ -1,39 +1,17 @@
-window
-  .matchMedia("(prefers-color-scheme: dark)")
-  .addEventListener("change", ({ matches }) => {
-    if (matches) {
-      $("body").removeClass("light");
-      $(".change").text("ON");
-    } else {
-      $("body").addClass("light");
-      $(".change").text("OFF");
-    }
-  });
-
-$(".change").on("click", function () {
-  if ($("body").hasClass("light")) {
-    $("body").removeClass("light");
-    $(".change").text("ON");
-  } else {
-    $("body").addClass("light");
-    $(".change").text("OFF");
-  }
-});
-
-// Get references to all elements with class "grid-item"
-var gridItems = document.querySelectorAll(".grid-item");
-
-// Add event listeners to each grid item
+const gridItems = document.querySelectorAll("#grid-item");
 gridItems.forEach(function (gridItem) {
   gridItem.addEventListener("mouseover", function () {
-    gridItem.style.backgroundSize = "110%";
+    gridItem.style.backgroundSize = "104%";
+    gridItem.style.fontSize = "2.2vw";
+    gridItem.style.borderRadius = "0.25vw";
   });
 
   gridItem.addEventListener("mouseout", function () {
     gridItem.style.backgroundSize = "100%";
+    gridItem.style.fontSize = "2.1vw";
+    gridItem.style.borderRadius = "1vw";
   });
 });
-function openFile(filePath) {
-  // Use window.location.href to redirect to the specified page
-  window.location.href = filePath;
+function openGame(path) {
+  window.location.href = `games/${path}`;
 }
