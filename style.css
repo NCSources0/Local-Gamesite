@@ -84,5 +84,5 @@ header {
   border-radius: 1vw;
   border: 1px solid #fff;
   aspect-ratio: 1;
-  transition: all 0.1s;
+  transition: background-size 0.1s, font-size 0.1s, border-radius 0.1s;
 }
