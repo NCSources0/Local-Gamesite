@@ -54,7 +54,6 @@ body {
   background-color: rgb(0, 0, 5);
   font-family: SourceCodePro;
   color: #fff;
-  transition: all 0.1s;
 }
 
 header {
@@ -64,7 +63,6 @@ header {
   width: 100vw;
   backdrop-filter: blur(10px);
   border: 1px solid #fff;
-  transition: all 0.1s;
 }
 
 #grid-container {
