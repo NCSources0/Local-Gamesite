@@ -2,40 +2,50 @@
   font-family: SourceCodePro;
   src: url(fonts/SourceCodePro/Regular.ttf);
 }
+
 @font-face {
   font-family: SourceCodeProItalic;
   src: url(fonts/SourceCodePro/Italic.ttf);
 }
+
 @font-face {
   font-family: SourceCodeProBold;
   src: url(fonts/SourceCodePro/Bold.ttf);
 }
+
 @font-face {
   font-family: SourceCodeProBoldItalic;
   src: url(fonts/SourceCodePro/BoldItalic.ttf);
 }
+
 @font-face {
   font-family: Pacifico;
   src: url(fonts/Pacifico.ttf);
 }
+
 i {
   font-family: SourceCodeProItalic;
 }
+
 b {
   font-family: SourceCodeProBold;
 }
+
 b i,
 i b {
   font-family: SourceCodeProBoldItalic;
 }
+
 handwriting {
   font-family: Pacifico;
 }
+
 version {
   position: fixed;
   top: calc(0.5vw - 3px);
   left: 0.5vw;
 }
+
 body {
   margin: 0.5vw;
   font-size: 1.2vw;
@@ -44,7 +54,9 @@ body {
   background-color: rgb(0, 0, 5);
   font-family: SourceCodePro;
   color: #fff;
+  transition: all 0.1s;
 }
+
 header {
   position: fixed;
   left: -1px;
@@ -52,17 +64,20 @@ header {
   width: 100vw;
   backdrop-filter: blur(10px);
   border: 1px solid #fff;
+  transition: all 0.1s;
 }
+
 #grid-container {
   margin-top: calc(3vw + 0.5vw);
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 0.5vw;
 }
+
 #grid-item {
   font-size: 2.1vw;
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: rgb(0, 0, 10);
   -webkit-text-stroke: #000 1px;
