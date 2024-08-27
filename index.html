@@ -5,18 +5,28 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Download To Play Offline!</title>
+	<link rel="stylesheet" href="style.css">
 	<style>
 		button {
+			font-family: SourceCodePro;
 			font-size: 1.2vw;
 			padding: 0;
 			position: fixed;
 			font-weight: bold;
-			left: 1vw;
-			top: 1.2vw;
+			left: 0.6vw;
+			top: 1.4vw;
 			z-index: 999;
 			background: 0;
-			color: #fff;
+			color: #00f;
+			text-shadow: #00f 0 0 5px;
 			border: 0;
+			transition: all 0.1s;
+			cursor: pointer;
+		}
+
+		button:hover {
+			color: #f0f;
+			text-shadow: #f0f 0 0 5px;
 		}
 
 		iframe {
@@ -30,10 +40,8 @@
 </head>
 
 <body>
-	<header>
-		<button
-			onclick="window.location.href='https://github.com/NCSources0/Local-Gamesite/archive/refs/heads/main.zip'">Download</button>
-	</header>
+	<button
+		onclick="window.location.href='https://github.com/NCSources0/Local-Gamesite/archive/refs/heads/main.zip'">Download</button>
 	<iframe src="Run Me.html"></iframe>
 </body>
 
