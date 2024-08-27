@@ -2,13 +2,11 @@ const gridItems = document.querySelectorAll("#grid-item");
 gridItems.forEach(function (gridItem) {
   gridItem.addEventListener("mouseover", function () {
     gridItem.style.backgroundSize = "104%";
-    gridItem.style.fontSize = "2.2vw";
     gridItem.style.borderRadius = "0.25vw";
   });
 
   gridItem.addEventListener("mouseout", function () {
     gridItem.style.backgroundSize = "100%";
-    gridItem.style.fontSize = "2.1vw";
     gridItem.style.borderRadius = "1vw";
   });
 });
