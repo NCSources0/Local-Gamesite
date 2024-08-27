@@ -8,21 +8,27 @@
 	<link rel="shortcut icon" href="img/favicon.png" type="image/png" />
 	<link rel="stylesheet" href="style.css">
 	<style>
+		body {
+			display: flex;
+			align-items: flex-end;
+			justify-content: right;
+			margin-right: 0.5vw;
+			margin-top: 0.2vw;
+		}
+
 		button {
 			font-family: SourceCodePro;
 			font-size: 1.2vw;
 			padding: 0;
-			position: fixed;
-			font-weight: bold;
-			left: 0.4vw;
-			top: 1.4vw;
 			z-index: 999;
+			position: relative;
 			background: 0;
 			color: #00f;
 			text-shadow: #00f 0 0 5px;
 			border: 0;
 			transition: color 0.1s, text-shadow 0.1s;
 			cursor: pointer;
+			text-align: right;
 		}
 
 		button:hover {
