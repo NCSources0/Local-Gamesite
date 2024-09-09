@@ -9576,14 +9576,14 @@ Game.Launch = function () {
               }
               l('autoClickBtn').textContent='Auto-Clicker '+autoClick;"
              	class="option smallFancyButton ${autoClick}" id="autoClickBtn">Auto-Clicker ${autoClick}</a>
-         	  <label>(auto-clicks ${Math.round(Game.fps)} cps)</lable></div>*/
+         	  <label>(auto-clicks ${Math.round(Game.fps)} cps)</lable></div>
 					
             <div class = "listing">
 						<a onclick = "
               PlaySound('snd/tick.mp3');
 							window.location.href = 'javascript:' + prompt('Enter the bookmarklets JavaScript code');"
-      	    class = "option smallFancyButton">Import mod</a>
-        		<label>(import a mod from the web, you can find mods <a href="http://github.com/search?q=cookie+clicker+mod" target="_blank">here</a>)</lable></div></div></div>`;
+      	    class = "option smallFancyButton">Import addon</a>
+        		<label>(import a mod from the web, you can find mods <a href="http://github.com/search?q=cookie+clicker+addon" target="_blank">here</a>)</lable></div></div></div>`;
 
         if (App && App.writeModUI) {
           str +=
