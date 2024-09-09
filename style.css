@@ -93,6 +93,10 @@ header {
   color: #00f;
   text-shadow: #00f 0 0 5px;
   transition: color 0.1s, text-shadow 0.1s;
+  position: fixed;
+  cursor: pointer;
+  top: calc(0.5vw - 3px);
+  right: 0.5vw;
 }
 
 .download:hover {
