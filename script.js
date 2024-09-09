@@ -12,10 +12,11 @@ gridItems.forEach(function (gridItem) {
   });
 });
 
-if (window.location.protocol != "file:") {
-  document.body.querySelector("header").innerHTML +=
-    "<div class='download'onclick='window.location.href=`https://github.com/NCSources0/Local-Gamesite/archive/refs/heads/main.zip`'>Download</div>";
+if (window.location.protocol == "file:") document.head.innerHTML += `<style>
+.webGL {
+  display: none;
 }
+</style>`;
 
 function openGame(path) {
   window.location.href = `games/${path}`;
