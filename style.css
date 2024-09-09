@@ -90,16 +90,9 @@ header {
 .download {
   font-family: SourceCodePro;
   font-size: 1.2vw;
-  padding: 0;
-  z-index: 999;
-  position: relative;
-  background: 0;
   color: #00f;
   text-shadow: #00f 0 0 5px;
-  border: 0;
   transition: color 0.1s, text-shadow 0.1s;
-  cursor: pointer;
-  text-align: right;
 }
 
 .download:hover {
