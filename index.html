@@ -1,56 +1,54 @@
-<!DOCTYPE html>
-<html>
+﻿<!DOCTYPE html>
+<html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Download To Play Offline!</title>
-	<link rel="shortcut icon" href="img/favicon.png" type="image/png" />
-	<link rel="stylesheet" href="style.css">
-	<style>
-		body {
-			display: flex;
-			align-items: flex-end;
-			justify-content: right;
-			margin-right: 0.5vw;
-			margin-top: 0.2vw;
-		}
-
-		button {
-			font-family: SourceCodePro;
-			font-size: 1.2vw;
-			padding: 0;
-			z-index: 999;
-			position: relative;
-			background: 0;
-			color: #00f;
-			text-shadow: #00f 0 0 5px;
-			border: 0;
-			transition: color 0.1s, text-shadow 0.1s;
-			cursor: pointer;
-			text-align: right;
-		}
-
-		button:hover {
-			color: #f0f;
-			text-shadow: #f0f 0 0 5px;
-		}
-
-		iframe {
-			width: 100vw;
-			height: 100vh;
-			position: fixed;
-			left: 0;
-			top: 0;
-			border: 0;
-		}
-	</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
+  <title>The Lobby</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-	<button
-		onclick="window.location.href='https://github.com/NCSources0/Local-Gamesite/archive/refs/heads/main.zip'">Download</button>
-	<iframe src="Run Me.html"></iframe>
+  <header>
+    <version>Beta</version>
+    <center>
+      <handwriting style="font-size: 1.7vw">The Lobby</handwriting>
+    </center>
+  </header>
+  <div id="grid-container">
+    <div style="
+          background-image: url(games/cookie-clicker/img/perfectCookie.png);
+        " onclick="openGame('cookie-clicker/index.html')" id="grid-item">
+      Cookie Clicker
+    </div>
+    <div style="
+          background-image: url(games/hextris/images/icons/transparent.svg);
+        " onclick="openGame('hextris/index.html')" id="grid-item">
+      Hextris
+    </div>
+    <div style="background-image: url(img/eaglercraft.png)" onclick="openGame('EaglercraftX.html')" id="grid-item">
+      EaglercraftX 1.8
+    </div>
+    <div style="background-image: url(img/tetris.png)" onclick="openGame('tetris.html')" id="grid-item">
+      Tetris
+    </div>
+    <div style="background-image: url(games/xx142-b2exe/splash.png)" onclick="openGame('xx142-b2exe/index.html')"
+      id="grid-item">
+      xx142-b2.exe
+    </div>
+    <div style="background-image: url(img/snake.png)" onclick="openGame('snake/index.html')" id="grid-item">
+      Snake
+    </div>
+    <div style="background-image: url(games/its-adoorable/favicon.svg)"
+      onclick="openGame('its-adoorable/entercode.html')" id="grid-item">
+      it's a(door)able
+    </div>
+    <div style="background-image: url(img/wordle.webp)" onclick="openGame('wordle/index.html')" id="grid-item">
+      Wordle
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 
 </html>

@@ -10,6 +10,10 @@ gridItems.forEach(function (gridItem) {
     gridItem.style.borderRadius = "1vw";
   });
 });
+if (window.location.protocol != "file:") {
+  document.body.querySelector("header").innerHTML +=
+    "<button class='download'onclick='window.location.href=`https://github.com/NCSources0/Local-Gamesite/archive/refs/heads/main.zip`'>Download</button>";
+}
 function openGame(path) {
   window.location.href = `games/${path}`;
 }
