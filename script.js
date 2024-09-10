@@ -13,7 +13,7 @@ gridItems.forEach(function (gridItem) {
 });
 
 if (window.location.protocol == "file:") document.head.innerHTML += `<style>
-.webGL {
+.online {
   display: none;
 }
 </style>`;
