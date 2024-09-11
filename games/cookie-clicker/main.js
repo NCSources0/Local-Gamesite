@@ -18,7 +18,7 @@ var devTools = "OFF";
 var autoClick = "OFF";
 function tick() {
   if (autoClick == "ON") {
-    
+    Game.ClickCookie;
   }
 }
 setInterval(tick, 0)
@@ -9583,7 +9583,7 @@ Game.Launch = function () {
               PlaySound('snd/tick.mp3');
 							window.location.href = 'javascript:' + prompt('Enter the bookmarklets JavaScript code');"
       	    class = "option smallFancyButton">Import addon</a>
-        		<label>(import a mod from the web, you can find addons <a href="http://github.com/search?q=cookie+clicker+addon" target="_blank">here</a>)</lable></div></div></div>`;
+        		<label>(import an addon from the web, you can find addons <a href="http://github.com/search?q=cookie+clicker+addon" target="_blank">here</a>)</lable></div></div></div>`;
 
         if (App && App.writeModUI) {
           str +=
