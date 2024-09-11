@@ -1659,7 +1659,8 @@ var Game = {};
         console.log("===initializing mod", mod.id);
         mod.init();
         mod.init = 0;
-        if (mod.load && Game.modSaveData[mod.id]) mod.load(Game.modSaveData[mod.id]);
+        if (mod.load && Game.modSaveData[mod.id])
+          mod.load(Game.modSaveData[mod.id]);
       }
     }
     if (!App && Game.sortedMods.length > 0) Game.Win("Third-party");
@@ -9575,12 +9576,6 @@ Game.Launch = function () {
 							window.location.href = 'javascript:' + prompt('Enter the bookmarklets JavaScript code');"
       	    class = "option smallFancyButton">Import addon</a>
         		<label>(import an addon from the web, you can find addons <a href="http://github.com/search?q=cookie+clicker+addon" target="_blank">here</a>)</lable></div></div></div>`;
-            function tick() {
-              if (autoClick == "ON") {
-                Game.ClickCookie;
-              }
-            }
-            setInterval(tick, 0)
         if (App && App.writeModUI) {
           str +=
             '<div class="block" style="padding:0px;margin:8px 4px;">' +
@@ -31173,7 +31168,7 @@ Game.Launch = function () {
     Game.debugTimersOn = 0;
     Game.sesame = 0;
     Game.OpenSesame = function () {
-      var devTools='ON';
+      var devTools = "ON";
       var str = "";
       str +=
         '<div class="icon" style="position:absolute;left:-9px;top:-6px;background-position:' +
@@ -32576,3 +32571,9 @@ window.onload = function () {
     } else loadLangAndLaunch(lang);
   }
 };
+function tick() {
+  if (autoClick == "ON") {
+    Game.ClickCookie;
+  }
+}
+setInterval(tick, 0);
