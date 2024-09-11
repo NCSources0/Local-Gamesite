@@ -9553,7 +9553,7 @@ Game.Launch = function () {
               }
               l('devToolsBtn').textContent='Dev tools '+devTools;"
             	class="option smallFancyButton ${devTools}" id="devToolsBtn">Dev tools ${devTools}</a>
-          	<label>(enables the "saysopensaysme" name cheat, without changeing your bakery's name)</lable></div>
+          	<label>(enables the "saysopensaysme" name cheat, without needing to change your bakery's name)</lable></div>
 					
             <div class = "listing">
 						<a onclick = "
