@@ -9,20 +9,11 @@ Have a nice trip, and stay safe.
 Spoilers ahead.
 http://orteil.dashnet.org
 */
-
+var devTools = "OFF";
+var autoClick = "OFF";
 /*=====================================================================================
 MISC HELPER FUNCTIONS
 =======================================================================================*/
-//Added by NCSources
-var devTools = "OFF";
-var autoClick = "OFF";
-function tick() {
-  if (autoClick == "ON") {
-    Game.ClickCookie;
-  }
-}
-setInterval(tick, 0)
-//No longer added by NCSources
 
 function l(what) {
   return document.getElementById(what);
@@ -9584,7 +9575,12 @@ Game.Launch = function () {
 							window.location.href = 'javascript:' + prompt('Enter the bookmarklets JavaScript code');"
       	    class = "option smallFancyButton">Import addon</a>
         		<label>(import an addon from the web, you can find addons <a href="http://github.com/search?q=cookie+clicker+addon" target="_blank">here</a>)</lable></div></div></div>`;
-
+            function tick() {
+              if (autoClick == "ON") {
+                Game.ClickCookie;
+              }
+            }
+            setInterval(tick, 0)
         if (App && App.writeModUI) {
           str +=
             '<div class="block" style="padding:0px;margin:8px 4px;">' +
