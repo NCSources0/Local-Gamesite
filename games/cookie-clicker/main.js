@@ -9558,7 +9558,7 @@ Game.Launch = function () {
             <div class = "listing">
 						<a onclick = "
               PlaySound('snd/tick.mp3');
-							window.location.href = 'javascript:(function(){'+prompt('Paste the bookmarklets JavaScript code'+'})()');"
+							window.location.href = 'javascript:(function(){'+prompt('Paste the bookmarklets JavaScript code')+'})()';"
       	    class = "option smallFancyButton">Import addon</a>
         		<label>(import an addon from the web, you can find addons <a href="http://github.com/search?q=cookie+clicker+addon" target="_blank">here</a>)</lable></div></div></div>`;
         if (App && App.writeModUI) {
