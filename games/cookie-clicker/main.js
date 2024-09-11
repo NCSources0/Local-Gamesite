@@ -10,7 +10,6 @@ Spoilers ahead.
 http://orteil.dashnet.org
 */
 var devTools = "OFF";
-var autoClick = "OFF";
 /*=====================================================================================
 MISC HELPER FUNCTIONS
 =======================================================================================*/
@@ -9555,25 +9554,11 @@ Game.Launch = function () {
               l('devToolsBtn').textContent='Dev tools '+devTools;"
             	class="option smallFancyButton ${devTools}" id="devToolsBtn">Dev tools ${devTools}</a>
           	<label>(enables the "saysopensaysme" name cheat, without changeing your bakery's name)</lable></div>
-
-          <div class="listing">
-            <a onclick="
-              PlaySound('snd/tick.mp3');
-              if (autoClick=='OFF') {
-                autoClick='ON';
-                l('autoClickBtn').classList.remove('OFF');
-              }else {
-                autoClick='OFF';
-                l('autoClickBtn').classList.add('OFF');
-              }
-              l('autoClickBtn').textContent='Auto-Clicker '+autoClick;"
-             	class="option smallFancyButton ${autoClick}" id="autoClickBtn">Auto-Clicker ${autoClick}</a>
-         	  <label>(auto-clicks ${Math.round(Game.fps)} cps)</lable></div>
 					
             <div class = "listing">
 						<a onclick = "
               PlaySound('snd/tick.mp3');
-							window.location.href = 'javascript:' + prompt('Enter the bookmarklets JavaScript code');"
+							window.location.href = 'javascript:(function(){'+prompt('Paste the bookmarklets JavaScript code'+'})()');"
       	    class = "option smallFancyButton">Import addon</a>
         		<label>(import an addon from the web, you can find addons <a href="http://github.com/search?q=cookie+clicker+addon" target="_blank">here</a>)</lable></div></div></div>`;
         if (App && App.writeModUI) {
@@ -32571,9 +32556,3 @@ window.onload = function () {
     } else loadLangAndLaunch(lang);
   }
 };
-function tick() {
-  if (autoClick == "ON") {
-    Game.ClickCookie;
-  }
-}
-setInterval(tick, 0);
