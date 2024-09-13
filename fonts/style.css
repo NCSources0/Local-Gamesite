@@ -1,0 +1,57 @@
+@font-face {
+  font-family: SourceCodePro;
+  src: url(SourceCodePro/Regular.ttf);
+}
+
+@font-face {
+  font-family: SourceCodeProItalic;
+  src: url(SourceCodePro/Italic.ttf);
+}
+
+@font-face {
+  font-family: SourceCodeProBold;
+  src: url(SourceCodePro/Bold.ttf);
+}
+
+@font-face {
+  font-family: SourceCodeProBoldItalic;
+  src: url(SourceCodePro/BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: Pacifico;
+  src: url(Pacifico.ttf);
+}
+
+i {
+  font-family: SourceCodeProItalic;
+}
+
+b {
+  font-family: SourceCodeProBold;
+}
+
+b i,
+i b {
+  font-family: SourceCodeProBoldItalic;
+}
+
+h {
+  font-family: Pacifico;
+}
+
+body {
+  background-color: #000;
+  font-family: SourceCodePro;
+  color: #fff;
+}
+
+a {
+  color: #00f;
+  transition: color 0.1s;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #f0f;
+}
