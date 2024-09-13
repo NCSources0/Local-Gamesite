@@ -61,6 +61,7 @@ function cloak() {
       border-radius:1vh;
       align-items:center;
       justify-content:center;
+      cursor:pointer;
     " onclick="
     document.querySelector('iframe').src='${location.href}'
     ">
