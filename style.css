@@ -1,5 +1,9 @@
 @import url(fonts/style.css);
 
+* {
+  font-family: SourceCodePro;
+}
+
 version {
   position: fixed;
   top: calc(0.5vw - 3px);
@@ -32,31 +36,34 @@ header {
 #grid-item {
   font-size: 2.1vw;
   background-position: center;
-  background-size: cover;
   background-repeat: no-repeat;
   background-color: #111;
   -webkit-text-stroke: #000 1px;
   cursor: pointer;
   text-align: center;
-  border-radius: 1vw;
   border: 1px solid #fff;
   aspect-ratio: 1;
+  background-size: 100%;
+  border-radius: 1vw;
   transition: background-size 0.1s, border-radius 0.1s;
 }
 
-.download {
-  font-family: SourceCodePro;
+#grid-item:hover {
+  background-size: 104%;
+  border-radius: 0.25vw;
+}
+
+.fakeA {
   font-size: 1.2vw;
   color: #00f;
   text-shadow: #00f 0 0 5px;
   transition: color 0.1s, text-shadow 0.1s;
   position: fixed;
   cursor: pointer;
-  top: calc(0.5vw - 3px);
   right: 0.5vw;
 }
 
-.download:hover {
+.fakeA:hover {
   color: #f0f;
   text-shadow: #f0f 0 0 5px;
 }

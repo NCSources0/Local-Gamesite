@@ -1,20 +1,13 @@
-const gridItems = document.querySelectorAll("#grid-item");
-
-gridItems.forEach(function (gridItem) {
-  gridItem.addEventListener("mouseover", function () {
-    gridItem.style.backgroundSize = "104%";
-    gridItem.style.borderRadius = "0.25vw";
-  });
-
-  gridItem.addEventListener("mouseout", function () {
-    gridItem.style.backgroundSize = "100%";
-    gridItem.style.borderRadius = "1vw";
-  });
-});
-
 if (window.location.protocol == "file:")
   document.head.innerHTML += `<style>
 .online {
+  display: none;
+}
+</style>`;
+
+if (!inIframe())
+  document.head.innerHTML += `<style>
+.iFrame {
   display: none;
 }
 </style>`;
@@ -89,8 +82,18 @@ function cloak() {
 
 function inIframe() {
   try {
-    return window.self !== window.top;
+    return window.self != window.top;
   } catch (e) {
     return true;
+  }
+}
+
+function toggleFullScreen() {
+  if (!document.fullscreenElement) {
+    document.documentElement.requestFullscreen();
+    document.querySelectorAll(".fullscreen").innerHTML = "close_fullscreen";
+  } else {
+    document.exitFullscreen();
+    document.querySelectorAll(".fullscreen").innerHTML = "open_in_full";
   }
 }
